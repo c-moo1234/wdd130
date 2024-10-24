@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+#cherries {
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+#grey-box {}
+
+.large {}
+
+.title {}
+
+
+:root {
+--primary-color: #A9A9A9;
+
+--paragraph-color-on-color: #A9A9A9; 
+
+}
