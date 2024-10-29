@@ -1,0 +1,15 @@
+#banner {
+    margin: 0 auto;
+    width: auto;
+}
+
+.circles {
+    border-color: black;
+    border-radius: 50%;
+    width: 25%;
+}
+
+.circlesbox {
+    background-color: grey;
+    margin: 0 auto;
+}
