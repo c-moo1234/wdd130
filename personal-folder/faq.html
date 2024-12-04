@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FAQ</title>
+    <link rel="stylesheet" href="styles/styles.css" />
+  </head>
+  <body>
+    <header>
+      <a href="index.html" id="logo_link">
+        <img
+          class="logo"
+          src="images/melanies hair salon.png"
+          alt="melis hair salon logo"
+        />
+      </a>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="faq.html">FAQ</a>
+      </nav>
+    </header>
+    <main>
+      <h2 class="faq-header">FAQ</h2>
+
+      <button type="button" class="collapsible">
+        What are your hours of operation?
+      </button>
+      <div class="content">
+        <p>
+          Monday through Friday: 9:00 AM through 7:00 PM Saturday: 9:00 AM
+          through 5:00 PM Sunday: Closed
+        </p>
+      </div>
+      <button type="button" class="collapsible">
+        How can I book an appointment?
+      </button>
+      <div class="content">
+        <p>
+          You can book an appointment online through our [booking page link] or
+          call us directly at [Insert Phone Number]. Walk-ins are welcome based
+          on availability!
+        </p>
+      </div>
+      <button type="button" class="collapsible">
+        What services do you offer?
+      </button>
+      <div class="content">
+        <p>
+          We offer a wide range of services, including: Haircuts for men, women,
+          and children Hair coloring (balayage, highlights, root touch-ups)
+          Blowouts and styling Hair treatments (deep conditioning, keratin,
+          scalp treatments) Extensions and special occasion styles
+        </p>
+        <img src="images/before and after 1.jpg" alt="before and after 1" />
+        <img src="images/before and after 2.jpg" alt="before and after 2" />
+      </div>
+      <button type="button" class="collapsible">
+        Do you offer services for special events?
+      </button>
+      <div class="content">
+        <p>
+          Yes! We provide hair services for weddings, proms, and other special
+          events. We can also accommodate group bookings. Contact us for more
+          details and availability.
+        </p>
+      </div>
+    </main>
+    <footer>
+      <a href="site-plan.html">Site Plan</a>
+      <a href="faq.html">FAQ</a>
+      <a href="services.html">Services</a>
+      <a href="https://facebook.com" target="_blank">
+        <img src="images/facebook.png" alt="fb icon" />
+      </a>
+      <a href="https://twitter.com" target="_blank">
+        <img src="images/twitter.png" alt="twitter icon" />
+      </a>
+      <a href="https://instagram.com" target="_blank">
+        <img src="images/instagram.png" alt="instagram icon" />
+      </a>
+    </footer>
+    <script>
+      var coll = document.getElementsByClassName("collapsible");
+      var i;
+
+      for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function () {
+          this.classList.toggle("active");
+          var content = this.nextElementSibling;
+          if (content.style.display === "block") {
+            content.style.display = "none";
+          } else {
+            content.style.display = "block";
+          }
+        });
+      }
+    </script>
+  </body>
+</html>
