@@ -5,10 +5,10 @@ Fonts are separated by a | */
 
 :root {
   /* change the values below to your colors from your palette */
-  --primary-color: #cdb4db;
-  --secondary-color: #ffc8dd;
-  --accent1-color: #ffafcc;
-  --accent2-color: #bde0fe;
+  --primary-color: #4e91b3;
+  --secondary-color: #f4c2c2;
+  --accent1-color: #ff6f61;
+  --accent2-color: #d1e8e2;
 
   /* change the values below to your chosen font(s) */
   --heading-font: "Rock Salt";
@@ -218,4 +218,131 @@ nav a:hover {
 
 .active:after {
   content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
+
+/* Sub Page 2 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#custom-body {
+  font-family: var(--paragraph-font);
+  background-color: var(--accent2-color);
+  color: #333;
+  line-height: 1.6;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--primary-color);
+  padding: 1rem;
+}
+
+header nav a {
+  margin: 0 1rem;
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  font-family: var(--paragraph-font);
+}
+
+header nav a:hover {
+  color: var(--accent1-color);
+}
+
+h2.faq-header {
+  text-align: center;
+  margin: 1.5rem 0;
+  font-family: var(--heading-font);
+  color: var(--secondary-color);
+  font-size: 2rem;
+}
+
+main {
+  padding: 1rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+button.collapsible {
+  background-color: var(--secondary-color);
+  color: #333;
+  cursor: pointer;
+  padding: 1rem;
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid var(--accent2-color);
+  text-align: left;
+  outline: none;
+  font-size: 1rem;
+  font-family: var(--paragraph-font);
+  transition: background-color 0.3s;
+}
+
+button.collapsible:hover {
+  background-color: var(--accent1-color);
+}
+
+button.collapsible::after {
+  content: "+";
+  float: right;
+  font-weight: bold;
+}
+
+button.collapsible.active::after {
+  content: "-";
+}
+
+div.content {
+  display: none;
+  overflow: hidden;
+  padding: 1rem;
+  background-color: #fff;
+  border-left: 4px solid var(--primary-color);
+  margin-bottom: 0.5rem;
+  font-family: var(--paragraph-font);
+}
+
+div.content img {
+  max-width: 100px;
+  margin: 0.5rem;
+}
+
+footer {
+  background-color: var(--primary-color);
+  color: #333;
+  text-align: left;
+  padding: 1rem;
+  margin-top: 2rem;
+  font-family: var(--paragraph-font);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer a {
+  margin: 0 1rem;
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+footer a:hover {
+  color: var(--accent1-color);
+}
+
+footer .social-icons {
+  display: flex;
+  justify-content: flex-end;
+}
+
+footer img {
+  height: 20px;
+  width: auto;
+  margin-left: 10px;
+  vertical-align: middle;
 }
